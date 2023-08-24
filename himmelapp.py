@@ -20,8 +20,7 @@ dim = (width, height)
 # resize image
 img = cv2.resize(img, dim, interpolation = cv2.INTER_AREA)
 
+print("hej")
 
 st.subheader('Map of all pickups at %s:00' % hour_to_filter)
 st.image(img)
-
-!pip freeze
